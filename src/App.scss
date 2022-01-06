@@ -1,0 +1,81 @@
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+  text-align: center;
+}
+
+.main-page {
+    align-self: center;
+}
+
+.main-name {
+    animation: fade 1.5s ease-in;
+    font-size: 120px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+.sub-name {
+    animation: delay-fade 1.5s ease-in;
+    font-size: 30px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+// temp for WIP display
+.wip {
+    animation: delay-fade 3s ease-in;
+    font-size: 20px;
+    font-weight: lighter;
+    align-self: center;
+    letter-spacing: 0.2rem;
+    color: gray;
+}
+
+@keyframes fade {
+  0% {
+      opacity: 0;
+  }    
+}
+
+@keyframes delay-fade {
+    0% { opacity: 0; }
+    33% { opacity: 0 }
+    66% { opacity: 0 }
+    100% { opacity: 1; }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
